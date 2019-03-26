@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import { Route } from 'react-router-dom';
+//import { Route } from 'react-router-dom';
 import NoteMainList from './NoteMainList';
 
 
@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     // 1) how can we log the data we want to work here 
     //console.log(this.props.store.notes); this won't work because i need to pull down from the store
-    //console.log(this.state.store.notes) this is the data i want to access
+    //console.log(this.state.store.notes) this is the data i want to access if i want the notes
     // 2) how can we get the data to the component we want and log it out there
     return(
       <div className="App">
