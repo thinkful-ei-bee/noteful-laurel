@@ -8,6 +8,6 @@ import store from './store';
 
 ReactDOM.render(
     <BrowserRouter> 
-    {/* here i am naming giving the store the prop name store */}
+    {/* here i am naming giving the store the prop name store from store.js*/}
     <App store={store}/>
    </BrowserRouter>, document.getElementById('root'));

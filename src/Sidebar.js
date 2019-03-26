@@ -8,9 +8,10 @@ class Sidebar extends React.Component {
 //create an array of folders (3 from the store)
 //for each folder we want one div
         const folders = this.props.folders.map((folder) => {
-            console.log(folder);
+            //console.log(folder); this is to log and see what the parameter folder is getting
             return (
                 <section>
+                    {/* folder.name is only accessing the name of the folder from the store which we named the prop folders in App.js using the parameter (folder) in the variable above */}
                     <h3>{folder.name}</h3>
                 </section>
             )
