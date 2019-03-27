@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 
 
 class NoteMainList extends React.Component {
@@ -18,6 +19,7 @@ class NoteMainList extends React.Component {
         //console.log(this.props.notes); this logs to see the data we are getting from the store from the prop that was named in App.js and that is why it is this.props.notes instead of this.store.notes
         return(
             <div>
+                <Header />
                 {/* {notes} is rendering the array we mapped through to the computer because that is the value we set out variable to */}
                 {notes}
             </div>

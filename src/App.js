@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
-//import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import NoteMainList from './NoteMainList';
 
 
@@ -23,11 +23,17 @@ class App extends Component {
     return(
       <div className="App">
         <main>
+          <Switch>
+          <Route exact path='/Header' component={Header} />
+          <Route path='/Sidebar' component={Sidebar} />
+          <Route path='/NoteMainList' component={NoteMainList} />
+          </Switch> 
           <Header />
           {/* here in sidebar i will need to access the folders from the store */}
-          <Sidebar folders={this.state.store.folders}/>
+         <Sidebar folders={this.state.store.folders}/>
           {/* in notemainlist we access the notes by naming the prop and pulling it from the store */}
-          <NoteMainList notes={this.state.store.notes}/>        
+          <NoteMainList notes={this.state.store.notes}/>
+                 
         </main>
       </div>
     )

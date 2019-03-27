@@ -1,5 +1,5 @@
 import React from 'react';
-//import Header from './Header';
+import Header from './Header';
 
 
 
@@ -20,6 +20,7 @@ class Sidebar extends React.Component {
             <div>
               
                 <div>
+                    <Header />
                     <aside id="sidebar">
                         {folders} 
                         {/* <section id="f1">Folder 1</section>
